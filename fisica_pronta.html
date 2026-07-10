@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dilatação Térmica dos Sólidos</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+    scroll-padding-top:140px;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#eef3f8;
+    color:#333;
+}
+
+header{
+    background:#b71c1c;
+    color:white;
+    text-align:center;
+    padding:25px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 10px rgba(0,0,0,.3);
+}
+
+header h1{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+header p{
+    margin:5px;
+}
+
+nav{
+    margin-top:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    background:#c62828;
+    padding:10px 18px;
+    margin:5px;
+    display:inline-block;
+    border-radius:8px;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:#ef5350;
+    transform:scale(1.05);
+}
+
+.hero{
+    text-align:center;
+    background:white;
+    padding:60px 20px;
+}
+
+.hero h2{
+    font-size:34px;
+    color:#b71c1c;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.botao{
+    display:inline-block;
+    background:#c62828;
+    color:white;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:8px;
+    transition:.3s;
+    font-weight:bold;
+}
+
+.botao:hover{
+    background:#b71c1c;
+}
+
+.card{
+    width:90%;
+    max-width:1050px;
+    margin:35px auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.card h2{
+    color:#b71c1c;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+.card ul{
+    margin-left:25px;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin:20px 0;
+}
+
+table th{
+    background:#c62828;
+    color:white;
+    padding:12px;
+}
+
+table td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
+}
+
+.questao{
+    margin-top:20px;
+    background:#f8f9fb;
+    padding:20px;
+    border-left:6px solid #c62828;
+    border-radius:8px;
+}
+
+.questao p{
+    margin:10px 0;
+}
+
+button{
+    background:#c62828;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+button:hover{
+    background:#b71c1c;
+}
+
+#nota{
+    margin-top:20px;
+    padding:20px;
+    background:#e8f5e9;
+    border-left:6px solid green;
+    border-radius:8px;
+}
+
+footer{
+    margin-top:50px;
+    background:#b71c1c;
+    color:white;
+    text-align:center;
+    padding:30px;
+    font-size:18px;
+}
+
+#teoria,
+#formulas,
+#aplicacoes,
+#exercicios,
+#simulado{
+    scroll-margin-top:180px;
+}
+
+@media(max-width:768px){
+
+header h1{
+    font-size:28px;
+}
+
+.hero h2{
+    font-size:26px;
+}
+
+nav a{
+    display:block;
+    margin:8px auto;
+    width:220px;
+}
+
+.card{
+    width:95%;
+}
+
+table{
+    font-size:14px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🌡️ Física</h1>
+<p><strong>Professora Brasilina Oliveira</strong></p>
+<p>Laboratório Virtual – Dilatação Térmica dos Sólidos</p>
+
+<nav>
+<a href="#teoria">Teoria</a>
+<a href="#formulas">Fórmulas</a>
+<a href="#aplicacoes">Aplicações</a>
+<a href="#exercicios">Exercícios</a>
+<a href="#simulado">Simulado</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Dilatação Térmica dos Sólidos</h2>
+
+<p>
+Nesta atividade, você estudará os conceitos básicos de dilatação térmica, suas fórmulas e algumas aplicações no cotidiano.
+</p>
+
+<a href="#teoria" class="botao">Começar atividade</a>
+</section>
+
+<section id="teoria" class="card">
+
+<h2>📚 Teoria</h2>
+
+<p>
+A <strong>dilatação térmica</strong> é o aumento das dimensões de um corpo quando sua temperatura aumenta.
+</p>
+
+<p>
+Isso acontece porque, ao receber calor, as partículas do material passam a vibrar mais intensamente, aumentando a distância média entre elas.
+</p>
+
+<p>
+Quando a temperatura diminui, pode ocorrer o processo contrário, chamado de <strong>contração térmica</strong>.
+</p>
+
+<h3>📌 Tipos de dilatação dos sólidos</h3>
+
+<ul>
+<li><strong>Dilatação linear:</strong> ocorre quando a variação principal acontece no comprimento.</li>
+<li><strong>Dilatação superficial:</strong> ocorre quando a variação acontece na área.</li>
+<li><strong>Dilatação volumétrica:</strong> ocorre quando a variação acontece no volume.</li>
+</ul>
+
+</section>
+
+<section id="formulas" class="card">
+
+<h2>🧮 Fórmulas</h2>
+
+<table>
+<tr>
+<th>Tipo de dilatação</th>
+<th>Fórmula</th>
+<th>Significado</th>
+</tr>
+
+<tr>
+<td>Linear</td>
+<td>ΔL = L₀ · α · ΔT</td>
+<td>Variação do comprimento</td>
+</tr>
+
+<tr>
+<td>Superficial</td>
+<td>ΔA = A₀ · β · ΔT</td>
+<td>Variação da área</td>
+</tr>
+
+<tr>
+<td>Volumétrica</td>
+<td>ΔV = V₀ · γ · ΔT</td>
+<td>Variação do volume</td>
+</tr>
+</table>
+
+<h3>📌 Significado das letras</h3>
+
+<ul>
+<li><strong>ΔL</strong>: dilatação linear</li>
+<li><strong>ΔA</strong>: dilatação superficial</li>
+<li><strong>ΔV</strong>: dilatação volumétrica</li>
+<li><strong>L₀</strong>: comprimento inicial</li>
+<li><strong>A₀</strong>: área inicial</li>
+<li><strong>V₀</strong>: volume inicial</li>
+<li><strong>α</strong>: coeficiente de dilatação linear</li>
+<li><strong>β</strong>: coeficiente de dilatação superficial</li>
+<li><strong>γ</strong>: coeficiente de dilatação volumétrica</li>
+<li><strong>ΔT</strong>: variação de temperatura</li>
+</ul>
+
+<h3>📌 Relação entre os coeficientes</h3>
+
+<p>
+Para sólidos isotrópicos, temos:
+</p>
+
+<ul>
+<li><strong>β = 2α</strong></li>
+<li><strong>γ = 3α</strong></li>
+</ul>
+
+</section>
+
+<section id="aplicacoes" class="card">
+
+<h2>🌎 Aplicações no cotidiano</h2>
+
+<div class="questao">
+<h3>🚆 Trilhos de trem</h3>
+<p>Pequenos espaços são deixados entre os trilhos para permitir a dilatação em dias quentes.</p>
+</div>
+
+<div class="questao">
+<h3>🌉 Pontes</h3>
+<p>As juntas de dilatação permitem que a estrutura se expanda e contraia sem sofrer danos.</p>
+</div>
+
+<div class="questao">
+<h3>🚪 Portões metálicos</h3>
+<p>Em dias muito quentes, um portão de metal pode dilatar e ficar mais difícil de abrir.</p>
+</div>
+
+<div class="questao">
+<h3>⚡ Cabos elétricos</h3>
+<p>Os cabos podem ficar mais frouxos no calor e mais esticados no frio.</p>
+</div>
+
+</section>
+
+<section id="exercicios" class="card">
+
+<h2>✏️ Exercícios</h2>
+
+<div class="questao">
+<h3>Questão 1</h3>
+<p>Um fio de cobre aumenta seu comprimento ao ser aquecido. Esse fenômeno é chamado de:</p>
+<p>A) Dilatação térmica<br>B) Calor específico<br>C) Condução térmica<br>D) Mudança de estado</p>
+<button onclick="mostrarResposta(1)">Mostrar resposta</button>
+<p id="resp1"></p>
+</div>
+
+<div class="questao">
+<h3>Questão 2</h3>
+<p>A fórmula da dilatação linear é:</p>
+<p>A) ΔV = V₀·γ·ΔT<br>B) ΔA = A₀·β·ΔT<br>C) ΔL = L₀·α·ΔT<br>D) Q = mcΔT</p>
+<button onclick="mostrarResposta(2)">Mostrar resposta</button>
+<p id="resp2"></p>
+</div>
+
+<div class="questao">
+<h3>Questão 3</h3>
+<p>Quando a temperatura de um sólido aumenta:</p>
+<p>A) As partículas diminuem de tamanho<br>B) As partículas vibram mais intensamente<br>C) O sólido perde massa<br>D) O sólido sempre muda de estado físico</p>
+<button onclick="mostrarResposta(3)">Mostrar resposta</button>
+<p id="resp3"></p>
+</div>
+
+<div class="questao">
+<h3>Questão 4</h3>
+<p>As juntas de dilatação em pontes servem para:</p>
+<p>A) Diminuir a massa da ponte<br>B) Permitir expansão e contração da estrutura<br>C) Evitar ferrugem<br>D) Melhorar a pintura</p>
+<button onclick="mostrarResposta(4)">Mostrar resposta</button>
+<p id="resp4"></p>
+</div>
+
+<div class="questao">
+<h3>Questão 5</h3>
+<p>A relação correta entre os coeficientes é:</p>
+<p>A) β = α<br>B) γ = 2α<br>C) β = 2α e γ = 3α<br>D) β = 3α e γ = 2α</p>
+<button onclick="mostrarResposta(5)">Mostrar resposta</button>
+<p id="resp5"></p>
+</div>
+
+</section>
+
+<section id="simulado" class="card">
+
+<h2>🎯 Simulado</h2>
+
+<form id="quiz">
+
+<p>1) A dilatação térmica ocorre quando:</p>
+<label><input type="radio" name="q1" value="1"> Um corpo aumenta suas dimensões ao ser aquecido</label><br>
+<label><input type="radio" name="q1" value="0"> Um corpo perde massa</label><br><br>
+
+<p>2) A dilatação linear está relacionada principalmente ao:</p>
+<label><input type="radio" name="q2" value="1"> Comprimento</label><br>
+<label><input type="radio" name="q2" value="0"> Tempo</label><br><br>
+
+<p>3) A fórmula ΔA = A₀·β·ΔT representa:</p>
+<label><input type="radio" name="q3" value="1"> Dilatação superficial</label><br>
+<label><input type="radio" name="q3" value="0"> Dilatação linear</label><br><br>
+
+<p>4) A fórmula ΔV = V₀·γ·ΔT representa:</p>
+<label><input type="radio" name="q4" value="1"> Dilatação volumétrica</label><br>
+<label><input type="radio" name="q4" value="0"> Dilatação superficial</label><br><br>
+
+<p>5) A variação de temperatura é representada por:</p>
+<label><input type="radio" name="q5" value="1"> ΔT</label><br>
+<label><input type="radio" name="q5" value="0"> ΔL</label><br><br>
+
+<p>6) Quando a temperatura diminui, pode ocorrer:</p>
+<label><input type="radio" name="q6" value="1"> Contração térmica</label><br>
+<label><input type="radio" name="q6" value="0"> Evaporação obrigatória</label><br><br>
+
+<p>7) Em sólidos isotrópicos, β é igual a:</p>
+<label><input type="radio" name="q7" value="1"> 2α</label><br>
+<label><input type="radio" name="q7" value="0"> 3α</label><br><br>
+
+<p>8) Em sólidos isotrópicos, γ é igual a:</p>
+<label><input type="radio" name="q8" value="1"> 3α</label><br>
+<label><input type="radio" name="q8" value="0"> α</label><br><br>
+
+<p>9) As juntas de dilatação são usadas em:</p>
+<label><input type="radio" name="q9" value="1"> Pontes e construções</label><br>
+<label><input type="radio" name="q9" value="0"> Apenas em líquidos</label><br><br>
+
+<p>10) A dilatação térmica depende:</p>
+<label><input type="radio" name="q10" value="1"> Do material, das dimensões iniciais e da variação de temperatura</label><br>
+<label><input type="radio" name="q10" value="0"> Apenas da cor do corpo</label><br><br>
+
+<button type="button" onclick="corrigir()">Corrigir Simulado</button>
+
+</form>
+
+<h3 id="nota"></h3>
+<br>
+
+<a class="botao" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdFdxWN4NLamQZ9blhP2xhZoadTOx4RAfyNIow-Sr3z41Kc5Q/viewform?usp=header">
+
+📝 Exercícios Avaliativos
+
+</a>
+
+</section>
+
+<footer>
+Projeto desenvolvido por<br><br>
+<strong>Brasilina Pereira de Oliveira</strong><br>
+
+</footer>
+
+<script>
+function mostrarResposta(n){
+
+    let respostas = {
+        1: "Resposta correta: A) Dilatação térmica.",
+        2: "Resposta correta: C) ΔL = L₀ · α · ΔT.",
+        3: "Resposta correta: B) As partículas vibram mais intensamente.",
+        4: "Resposta correta: B) Permitir expansão e contração da estrutura.",
+        5: "Resposta correta: C) β = 2α e γ = 3α."
+    };
+
+    let campo = document.getElementById("resp" + n);
+    let botao = event.target;
+
+    if(campo.innerHTML == ""){
+        campo.innerHTML = "<b>" + respostas[n] + "</b>";
+        botao.innerHTML = "Esconder resposta";
+    }else{
+        campo.innerHTML = "";
+        botao.innerHTML = "Mostrar resposta";
+    }
+
+}
+
+function corrigir(){
+
+    let acertos = 0;
+
+    for(let i = 1; i <= 10; i++){
+
+        let resposta = document.querySelector('input[name="q' + i + '"]:checked');
+
+        if(resposta){
+            acertos += parseInt(resposta.value);
+        }
+
+    }
+
+    let mensagem = "";
+
+    if(acertos >= 8){
+        mensagem = "Excelente desempenho!";
+    }else if(acertos >= 6){
+        mensagem = "Bom desempenho. Continue praticando.";
+    }else{
+        mensagem = "Revise a teoria e tente novamente.";
+    }
+
+    document.getElementById("nota").innerHTML =
+    "<h2>Resultado</h2>" +
+    "Acertos: <b>" + acertos + " de 10</b><br><br>" +
+    "<b>" + mensagem + "</b>";
+
+}
+</script>
+
+</body>
+</html>
