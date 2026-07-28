@@ -6,7 +6,7 @@
 
 html{
     scroll-behavior:smooth;
-    scroll-padding-top:140px;
+    scroll-padding-top:330px;
 }
 
 body{
@@ -202,5 +202,5 @@ input{
 #aplicacoes,
 #exercicios,
 #simulado{
-    scroll-margin-top: 180px;
+    scroll-margin-top: 330px;
 }
