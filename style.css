@@ -4,11 +4,15 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+    scroll-padding-top:140px;
+}
+
 body{
     font-family:Arial, Helvetica, sans-serif;
     background:#eef3f8;
     color:#333;
-    scroll-behavior:smooth;
 }
 
 header{
@@ -191,4 +195,12 @@ input{
     width:70px;
 }
 
+}
+#teoria,
+#calculadora,
+#grafico,
+#aplicacoes,
+#exercicios,
+#simulado{
+    scroll-margin-top: 180px;
 }
