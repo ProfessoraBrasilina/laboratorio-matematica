@@ -24,15 +24,15 @@ function calcular(){
         let x1=(-b+Math.sqrt(delta))/(2*a);
         let x2=(-b-Math.sqrt(delta))/(2*a);
 
-        texto+="<b>x₁ = </b>"+x1.toFixed(2)+"<br>";
-        texto+="<b>x₂ = </b>"+x2.toFixed(2)+"<br><br>";
+        texto+="<b>x₁ = </b>"+Number(x1.toFixed(2))+"<br>";
+        texto+="<b>x₂ = </b>"+Number(x2.toFixed(2))+"<br><br>";
 
     }
 
     let xv=-b/(2*a);
     let yv=a*xv*xv+b*xv+c;
 
-    texto+="<b>Vértice:</b> ("+xv.toFixed(2)+" ; "+yv.toFixed(2)+")<br>";
+    texto+="<b>Vértice:</b> ("+Number(xv.toFixed(2))+" ; "+Number(yv.toFixed(2))+")<br>";
 
     texto+="<b>Concavidade:</b> ";
 
